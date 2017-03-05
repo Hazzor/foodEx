@@ -1,0 +1,40 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "FoodUp"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "FoodUp"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "FoodUp"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "FoodUp"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "FoodUp"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "FoodUp"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "FoodUp"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "FoodUp"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "FoodUp"
+        }
+    }
+}

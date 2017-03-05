@@ -1,0 +1,28 @@
+page-login {
+
+    #logo{
+        width:50%;
+        // margin-top:100px;
+        margin-bottom : 20px;
+        
+    }
+
+    .imageContainer{
+        text-align:center;
+    }
+
+    // #space{
+
+    //     height:70px;
+    //     width:100%;
+
+    // }
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  display: none;
+}
+    #signUp{
+        text-align:center;
+        border-top: 1px solid lightgrey;
+    }
+}

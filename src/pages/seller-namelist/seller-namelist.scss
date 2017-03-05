@@ -1,0 +1,41 @@
+.md{
+page-seller-namelist {
+
+    
+        #locationToolbar{
+            margin-top: -10px; 
+            z-index:-999;
+
+         
+                ion-segment-button{
+                 margin-bottom:-15px;
+            }
+
+        }
+
+.item-left2 {
+    width : 50%;
+    // margin : 0;
+}
+
+.item-right2 {
+    width : 100%;
+    // margin-left:-150px;
+    text-align:left;
+    // text-justify: tr
+    // margin : 0;
+}
+
+.item-most-left{
+    width:8%;
+}
+
+// .quantity {
+//     // color: color($colors, button);
+//     color: #008B00;
+//     // padding: 5px;
+// }
+
+
+    }
+}

@@ -1,0 +1,93 @@
+<!--
+  Generated template for the SellerInfos page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Info</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+
+  <ion-list mode="wp">
+
+    <ion-item >
+
+      <ion-row > 
+      <div style="text-align:center; width:100%" >
+
+          <img src="images/food8.jpg" style="width:150px; height : 150px; padding:3px; border:1px solid lightgray; border-radius: 2px" >
+      </div>
+        </ion-row>
+
+        <ion-row > 
+      <div style="text-align:center; width:100%" >
+
+          <!--<button ion-button small color="secondary"> <ion-icon name="image"></ion-icon> &nbsp; Change Picture</button>-->
+          <button ion-button small clear color="secondary">CHANGE PICTURE</button>
+      </div>
+        </ion-row>
+      </ion-item>
+
+      <ion-item mode="wp">
+
+        <!--<ion-row > -->
+      <!--<div style=" width:100%;  text-align:center;" >-->
+          <!--<button ion-button> <ion-icon name="image"></ion-icon> &nbsp; Change Profile Picture</button>-->
+          <!--<h1 style="margin-top:5px;margin-bottom:10px;">Food Up </h1>-->
+
+          <ion-input type="text" style="font-size:2rem" mode="wp" placeholder="Company Name"></ion-input>
+      <!--</div>-->
+        <!--</ion-row>-->
+    </ion-item>
+
+    <ion-item mode="wp">
+      <ion-textarea type="textarea" placeholder="Tell us about your restaurant operation time and policies " mode="wp" clearInput></ion-textarea>
+    </ion-item>
+
+    <ion-item mode="wp">
+      <ion-textarea type="textarea" placeholder="Contact Info, example: Phone : 086-441264" mode="wp" clearInput></ion-textarea>
+    </ion-item>
+
+    <ion-item  mode="wp" (click)="navigate()">
+
+      <button ion-button class="button" mode="ios" color="secondary" round><h2 ><ion-icon name="pin" item-left></ion-icon>Pinpoint your restaurant location</h2></button>
+      
+    </ion-item>
+
+    <ion-item mode="wp">
+      <ion-textarea type="textarea" placeholder="Address" mode="wp" clearInput></ion-textarea>
+    </ion-item>
+
+
+
+    <!--<ion-item style="text-align:center">
+      <button ion-button small color="secondary" mode="ios">Add Members</button>
+    </ion-item>-->
+
+<!--      
+    <ion-item-divider color="light"><h2 class="itemDivider">Description</h2></ion-item-divider>
+    <ion-item>
+        <ion-textarea placeholder="Tell us more about your food ordering services" value="efrefefef"></ion-textarea>
+    </ion-item>
+
+    <ion-item-divider color="light"><h2 class="itemDivider">Contact</h2></ion-item-divider>
+    <ion-item>
+        <ion-textarea placeholder="Enter contact number and person in charge"></ion-textarea>
+    </ion-item>-->
+
+  </ion-list>
+
+  <div class="buttonContainer">
+  <button ion-button class="button" mode="ios" color="primary" round>Update Info</button>
+</div>
+    
+
+
+</ion-content>

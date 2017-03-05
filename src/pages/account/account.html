@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Account
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <img src="images/account/food7.jpg" >  
+  <ion-list>
+    <!--<ion-list-header>Follow us on Twitter</ion-list-header>-->
+
+  <ion-item detail-push (click)="profileSelected()">
+    <ion-icon name="contact" item-left color="gray"></ion-icon>
+    <h2>My Profile</h2>
+  </ion-item>
+
+  <!--<div style="width:100%; height:20px;">
+    
+  </div>-->
+
+  <ion-item detail-push (click)="sellerProfileSelected()">
+    <ion-icon name="contacts" item-left color="gray"></ion-icon>
+    <h2>Food Vendor Profile</h2>
+  </ion-item>
+
+  <ion-item detail-push (click)="contactSelected()">
+    <ion-icon name="call" item-left color="gray"></ion-icon>
+    <h2>About Us</h2>
+  </ion-item>
+
+  <ion-item detail-push (click)="becomeVendor()" >
+    <ion-icon name="information-circle" item-left color="gray" ></ion-icon>
+    <h2>Become Food Vendor</h2>
+  </ion-item>
+
+  <ion-item detail-push (click)="logoutSelected()">
+    <ion-icon name="power" item-left color="gray"></ion-icon>
+    <h2>Log Out</h2>
+  </ion-item>
+
+  </ion-list>
+
+
+</ion-content>

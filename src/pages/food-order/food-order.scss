@@ -1,0 +1,51 @@
+page-food-order {
+
+
+img {
+    max-width: 100%;
+    
+    
+}
+
+
+ion-list{
+    padding-top:0px;
+}
+
+.total {
+    font-weight:bold;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.buttonContainer{
+
+    text-align:center;
+    padding-bottom:15px;
+    
+
+    .button{
+    width:90%;
+    text-align:right;
+    font-weight:500;
+
+}
+}
+
+.itemDivider{
+    font-weight:bold;
+}
+
+// .description{
+//     padding: 10px 0;
+// }
+
+.quantity {
+    text-align:center;
+}
+
+
+
+}

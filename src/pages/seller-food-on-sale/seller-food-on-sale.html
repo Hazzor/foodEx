@@ -1,0 +1,154 @@
+<!--
+  Generated template for the FoodOnSale page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="seller">
+    <ion-title>Ali Bakery</ion-title>
+
+    <!--<ion-buttons end>
+      <button ion-button (click)="open()">
+        Edit
+      </button>
+  </ion-buttons>-->
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content >
+  <!--<ion-item>
+    <h2  color="primary"><b>MONDAY, 27 January Lunch </b></h2>
+  </ion-item>-->
+  
+<ion-list no-lines >
+
+  <ion-card mode="wp">
+    <ion-card-content mode="wp">
+      <ion-item>
+        <ion-label color="gray"><b>Show Availability</b></ion-label>
+        <ion-toggle mode="ios" checked="true"></ion-toggle>
+    </ion-item>
+
+     <ion-item>
+       <h6 item-content item-left color="gray" style="font-weight:100">Turning this on will make your shop visible to buyers near you</h6>
+  </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+ 
+
+  <ion-card mode="wp">
+    <ion-card-content>
+      
+          <h2 color="gray" mode="wp"><ion-icon name="md-time"></ion-icon>&nbsp; <b>Collection time</b></h2>
+
+          <ion-row center >
+            <ion-col width-50>
+
+              <ion-input mode="wp" type="number"  placeholder="2100"></ion-input>
+             <!--<ion-datetime mode="wp" item-left style="width:100%;" displayFormat="HH:mm"></ion-datetime>-->
+             </ion-col>
+
+             <ion-col width-1>-</ion-col>
+             <ion-col width-50>
+               <ion-input mode="wp" type="number" placeholder="2200"></ion-input>
+             </ion-col>
+          </ion-row>
+
+             <ion-item>
+       <h6 item-content item-left color="gray" style="font-weight:100">Set time for customers to collect their food</h6>
+  </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+
+
+  <ion-item-divider color="light">
+
+   
+  <h2 item-left color="gray"><b>Food Management</b> </h2>
+   <button (click)="learnMore()" ion-button clear item-right color="seller"><h4><ion-icon name="md-help-circle" ></ion-icon>&nbsp;LEARN MORE</h4></button>
+
+</ion-item-divider>
+
+  <div class="item-border">
+    <ion-item (click)="editFood()">
+      <ion-thumbnail item-left>
+        <img src="images/food1.jpg">
+      </ion-thumbnail>
+
+      
+
+      <div item-left item-content>  
+      <h2 class="foodName" >Blueberry Pancake</h2>
+      <ion-badge  color="lightgreen">2 Units</ion-badge>
+      <!--<p>Collect at : 2100 - 2300</p>-->
+      <!--<p style="width:100%"><ion-badge color="lightred" item-left>Out of stock</ion-badge> <span style="text-align:right"> 1 km</span> </p> -->
+      </div>
+
+       <ion-toggle mode="md" item-right checked="true" (ionChange)="setQuantity($event)"></ion-toggle>
+    </ion-item>
+  </div>
+
+    <div class="item-border" >
+    <ion-item (click)="editFood()">
+      <ion-thumbnail item-left>
+        <img src="images/food1.jpg">
+      </ion-thumbnail>
+      <div item-left item-content>  
+      <h2 class="foodName" #haha>Blueberry Pancake</h2>
+      <ion-badge color="lightred">Out of stock </ion-badge>
+      </div>
+
+       <ion-toggle mode="md" item-right checked="true" (ionChange)="setQuantity($event, haha)"></ion-toggle>
+       
+    </ion-item>
+  </div>
+
+  <div class="item-border">
+    <ion-item (click)="editFood()">
+      <ion-thumbnail item-left>
+        <img src="images/food1.jpg">
+      </ion-thumbnail>
+      <div item-left item-content>  
+      <h2 class="foodName" >Blueberry Pancake</h2>
+      <ion-badge  color="lightred">Out of stock</ion-badge>
+      </div>
+
+       <ion-toggle mode="md" item-right checked="true" (ionChange)="setQuantity($event)"></ion-toggle>
+    </ion-item>
+  </div>
+
+</ion-list>
+
+ <!--<ion-item mode="wp">
+       <h6 item-content color="gray" style="font-weight:100">If you have freshly-cooked excess food, turning ON the food will ENABLE the buyer to buy your food and turn OFF indicates OUT OF STOCK. Adjust the food quantity by clicking on the food</h6>
+</ion-item>-->
+
+<ion-item no-lines>
+<div class="addMore">
+  
+  <button (click)="sellMore()" color="seller" clear ion-button >
+    <h2><ion-icon name="md-add-circle"></ion-icon>&nbsp;SELL MORE FOOD</h2>
+  </button>
+
+</div>
+</ion-item>
+
+ <div class="buttonContainer">
+  <button (click) = "viewOrder()" ion-button class="button" round color="seller" mode="ios">View Real Time Orders</button>
+    </div>
+  
+
+</ion-content>
+
+<!--<ion-footer keyboard-attach>-->
+<!--  
+    <div class="buttonContainer">
+  <button ion-button class="button" round color="primary" mode="ios">View Real Time Orders</button>
+    </div>-->
+  
+<!--</ion-footer>-->

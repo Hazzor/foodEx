@@ -1,0 +1,74 @@
+<!--
+  Generated template for the FoodOrder page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Chicken Rice Hong Kong Style</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+
+<ion-list  no-lines>
+
+<img  src="images/food8.jpg" >
+
+<ion-item>
+  <!--<ion-badge item-left color="lightgreen"><h2><b>5 left</b></h2></ion-badge>-->
+  <ion-badge item-left color="lightred"><h2><b>Out of stock</b></h2></ion-badge>
+  <h2 class="price" item-right ><span color="gray"><del>RM5.00</del></span> </h2>
+  <h1 item-right><span color="lightgreen"><b> RM2.00 </b></span></h1>
+
+  
+</ion-item>
+
+<ion-list no-lines>
+<ion-item-divider color="light"><h2 class="itemDivider" color="gray">Quantity</h2></ion-item-divider>
+<ion-item no-lines>
+  <ion-icon item-left name="remove-circle" color="primary" (click)=itemMinus()></ion-icon>
+<h1 class="quantity">{{quantity}}</h1>
+  <ion-icon item-right name="add-circle" color="primary" (click)=itemPlus()></ion-icon>
+</ion-item>
+</ion-list>
+
+<ion-list no-lines>
+<ion-item-divider color="light"><h2 class="itemDivider" color="gray">Description</h2></ion-item-divider>
+
+<ion-item no-lines>
+<h4 class="quantity" item-content color="gray">Chinese style chicken rice. Come to collect around 830pm - 900pm </h4>
+</ion-item>
+
+<!--<ion-item no-lines color="light">
+  
+  <h2 item-left><ion-icon item-left name="md-time" color="gray"></ion-icon>Collect around : </h2>
+  <h1 color="primary">2200 - 2300</h1>
+    
+</ion-item>-->
+
+</ion-list>
+
+<!--<ion-list no-lines>-->
+<ion-item no-lines color="light">
+  <ion-icon item-left name="md-time" color="gray"></ion-icon>
+<h2 color="gray">Collect around : </h2>
+<h1 color="lightgreen"><b>2200 - 2300</b></h1>
+  
+</ion-item>
+<!--</ion-list>-->
+
+</ion-list>
+<div class="buttonContainer">
+  <button ion-button class="button" color="primary" round mode="ios">Order Now <ion-label >RM {{ quantity*5}}</ion-label></button>
+</div>
+
+
+
+</ion-content>
+
+

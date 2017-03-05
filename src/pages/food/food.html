@@ -1,0 +1,145 @@
+<ion-header>
+  <ion-navbar>
+    
+    <ion-title>Food Shop</ion-title>
+
+    <ion-buttons end>
+
+      <button ion-button icon-only (click)="openInfo()">
+        <ion-icon name = "md-information-circle"></ion-icon>
+      </button>
+
+      <button ion-button icon-only (click)="like()">
+        <ion-icon color="lightred" name = "md-heart"></ion-icon>
+      </button>
+  </ion-buttons>
+
+  </ion-navbar>
+  
+</ion-header>
+
+  <ion-content >
+
+    <div  mode="wp" no-padding>
+        
+        <ion-item class="item-border" mode="wp" color="light" style="padding-top:10px;" (click)="navigate()">
+          <h4 color="gray" item-left><ion-icon name="pin"></ion-icon> &nbsp; Address   &nbsp; : </h4>
+          <h4 color="gray" item-content>Lot 377, Jalan Taman Tipong Tului</h4>
+          <ion-icon color="primary" item-right name="ios-arrow-forward"></ion-icon>
+        </ion-item>
+
+        <ion-item  color="light" mode="wp">
+          <h4 color="gray" item-left> <ion-icon name="md-time"></ion-icon> &nbsp; Collect at :  </h4>
+          <h2 color="gray"><b>2200 - 2300</b></h2>
+          <!--<p item-right><ion-icon  color="primary" name="md-information-circle" ></ion-icon> More Info</p>
+          -->
+        </ion-item>
+
+   </div>
+
+  <div [ngSwitch]="food" style="padding-top:10px;">
+  <ion-list *ngSwitchCase="'Lunch'" (click)="foodClicked()" no-lines>
+
+  <div class="item-border">
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="images/food5.jpg">
+      </ion-thumbnail>
+      <div item-content item-left>
+      <h2 class="foodName" >Italian Food - Macaroni Peperoni</h2>
+      <h2 class="price" item-left ><span color="gray"><del >RM5.00</del></span>&nbsp; <span color="lightgreen"><b> RM2.00 </b></span></h2>
+      <ion-badge color="lightgreen">2 left</ion-badge>
+      </div>
+    </ion-item>
+  </div>
+
+   <div class="item-border">
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="images/food5.jpg">
+      </ion-thumbnail>
+      <div item-content item-left>
+      <h2 class="foodName">Italian Food - Macaroni Peperoni</h2>
+      <h2 class="price" item-left ><span color="gray"><del >RM5.00</del></span>&nbsp; <span color="lightgreen"><b> RM2.00 </b></span></h2>
+      <ion-badge color="lightgreen">10 left</ion-badge>
+      </div>
+    </ion-item>
+  </div>
+
+  <div class="item-border">
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="images/food5.jpg">
+      </ion-thumbnail>
+      <div item-content item-left>
+      <h2  class="foodName">Italian Food - Macaroni Peperoni</h2>
+        <h2 class="price" item-left ><span color="gray"><del >RM5.00</del></span>&nbsp; <span color="primary"><b> RM2.00 </b></span></h2>
+      <ion-badge color="lightred">Out of stock</ion-badge>
+      </div>
+    </ion-item>
+  </div>
+
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'Dinner'">
+    <ion-item>
+      <ion-thumbnail item-left>
+        <img src="images/food6.jpg">
+      </ion-thumbnail>
+      
+      <div item-content item-left>
+      <h2 class="foodName">Chinese Food - Chicken Honey</h2>
+      <h2  class="price">RM5</h2>
+      <ion-badge color="button">2x</ion-badge>
+      </div>
+      
+    </ion-item>
+
+    <ion-item padding>
+      <ion-thumbnail item-left>
+        <img src="images/food6.jpg">
+      </ion-thumbnail>
+      
+      <div item-content item-left>
+      <h2 >Chinese Food - Chicken Honey</h2>
+      <h2 color="danger" class="price">RM5</h2>
+      <ion-badge color="button">2x</ion-badge>
+      </div>
+      
+    </ion-item>
+
+  </ion-list>
+</div>
+
+ <!--<ion-fab right bottom>
+    <button ion-fab color="primary" (click)="postStatus()"><ion-icon name="md-send"></ion-icon></button>
+
+  </ion-fab>-->
+
+  <!--<div class="buttonContainer" keyboard-attach >
+  <button ion-button class="button" color="button" round mode="ios">Post Message</button>
+</div>-->
+
+<!--<ion-footer >
+  
+      <div class="item-border" no-padding>
+        
+        <ion-item no-lines color="light" style="padding-top:10px;">
+          <h4 item-left><ion-icon name="pin"></ion-icon> &nbsp; Address   &nbsp; : </h4>
+          <h4 item-content>Lot 377, Jalan Taman Tipong Tului</h4>
+        </ion-item>
+
+        <ion-item no-lines color="light">
+          <h4 item-left> <ion-icon name="md-time"></ion-icon> &nbsp; Collect at :  </h4>
+          <h2 color="primary"><b>2200 - 2300</b></h2>
+        </ion-item>
+
+   </div>
+
+</ion-footer >-->
+
+
+
+
+  
+</ion-content>

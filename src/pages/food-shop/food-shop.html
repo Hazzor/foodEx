@@ -1,0 +1,97 @@
+<!--
+  Generated template for the FoodShop page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title >Explore Food</ion-title>
+  </ion-navbar>
+
+  <!--<ion-toolbar color="light" mode="ios">
+
+  <ion-segment color="primary" mode="ios" [(ngModel)]="type">
+          <ion-segment-button value="List" >
+            List
+          </ion-segment-button >
+          <ion-segment-button  value="Map">
+            Map
+          </ion-segment-button>
+  </ion-segment>
+
+  </ion-toolbar>-->
+
+
+
+  <ion-toolbar color="light">
+
+      <ion-searchbar></ion-searchbar>
+
+  </ion-toolbar>
+  <!--<ion-toolbar>
+  <ion-item (click)="navigate()" color="primary">
+          <h4 color="gray" item-left><ion-icon name="pin"></ion-icon> &nbsp; Address   &nbsp; : </h4>
+          <h4 color="gray" item-content>Lot 377, Jalan Taman Tipong Tului</h4>
+          <ion-icon color="primary" item-right name="ios-arrow-forward"></ion-icon>
+        </ion-item>
+
+  </ion-toolbar>-->
+
+
+
+</ion-header>
+<ion-content padding-vertical>
+<!--
+<div [ngSwitch]="type">
+<ion-list (click)=itemClicked() no-lines *ngSwitchCase="'List'">-->
+
+<div >
+<ion-list (click)=itemClicked() no-lines >
+
+<div class="item-border">
+  <ion-item >
+    <ion-thumbnail item-left>
+      <img src="images/food1.jpg">
+    </ion-thumbnail>
+
+    
+
+    <div item-left item-content>  
+    <h2 class="foodName" >Chinese Restaurant</h2>
+    <p>Jalan Melor Taman Sri Jaya Sibu Sarawak</p>
+    <p>Collect at : 2100 - 2300</p>
+    <p style="width:100%"><ion-badge color="lightgreen" item-left>OPEN</ion-badge> <span style="text-align:right"> 1 km</span> </p> 
+    </div>
+  </ion-item>
+</div>
+
+<div class="item-border">
+  <ion-item >
+    <ion-thumbnail item-left>
+      <img src="images/food1.jpg">
+    </ion-thumbnail>
+
+    
+
+    <div item-left item-content>  
+    <h2 class="foodName" >Chinese Restaurant Petaling Jaya</h2>
+    <p>Jalan Melor Taman Sri Jaya Sibu Sarawak</p>
+    <p>Collect at : 2100 - 2300</p>
+    <p style="width:100%"><ion-badge color="lightred" item-left>CLOSE</ion-badge> <span style="text-align:right"> 3.5 km</span> </p> 
+    </div>
+  </ion-item>
+</div>
+
+
+</ion-list>
+</div>
+
+<!--<div *ngSwitchCase="'Map'">
+
+
+
+</div>-->
+
+</ion-content>
